@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dinesh - Digital Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav>
+    <h2>Dinesh</h2>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#sports">Sports</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <!-- HOME -->
+  <section id="home">
+    <div class="home-container">
+      <img id="profile-photo" src="https://via.placeholder.com/180" alt="Dinesh" class="profile-photo">
+      <input type="file" id="upload-photo" accept="image/*">
+      <div>
+        <h1>Hi, I'm <span style="color:#facc15;">Dinesh</span></h1>
+        <p class="typing" id="typing"></p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a BCA 2nd year student at Sri Aravindar Arts and Science College (Annamalai University). 
+       I am passionate about technology, web development, and also love sports like Football.</p>
+  </section>
+  
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill">Python</div>
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">React</div>
+      <div class="skill">GitHub</div>
+    </div>
+  </section>
+  
+  <!-- CERTIFICATES -->
+  <section id="certificates">
+    <h2>Certificates</h2>
+    <div class="certificates">
+      <div class="certificate" onclick="openModal('Python Basics')">Python Basics</div>
+      <div class="certificate" onclick="openModal('Web Development')">Web Development</div>
+      <div class="certificate" onclick="openModal('Football Achievement')">Football</div>
+    </div>
+  </section>
+  
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="modal-title"></h2>
+      <p>Certificate details will appear here...</p>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-links">
+      <p>Email: <span id="email">dheenu41@gmail.com</span></p>
+      <p>Phone: <span id="phone">8015662669</span></p>
+      <button id="edit-contact">Edit Contact</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Dinesh | Digital Portfolio</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
